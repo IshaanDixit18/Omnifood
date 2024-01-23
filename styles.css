@@ -106,15 +106,20 @@ header {
 /* Existing styles for hero and navbar (if any) */
 
 .main-content {
-    background-image: url('pexels-felix-mittermeier-956981.jpg'); /* Replace with the actual path to your image */
+    background-image: url('gargantua-black-5200x3250-9659.jpg'); /* Replace with the actual path to your image */
+    
+
     background-size: cover;
     background-position: center;
+    margin: 0; /* Remove default margin to ensure the background covers the entire viewport */
+   
     padding: 20px 0;
     padding: 50px 20px;
     text-align:center;
 }
 
 .content-container {
+    
     max-width: 1200px;
     margin: 0 auto;
     
@@ -134,6 +139,7 @@ header {
 
 .service {
     margin-bottom: 40px;
+    color: white;
     
 }
 
@@ -148,15 +154,13 @@ header {
 }
 
 .service p {
-    color: #777;
+    color: white;
 }
 
 /* Add more styles for additional sections/content */
 
 /* Existing styles for hero, navbar, and other sections (if any) */
-.testimonials{
-    background-color: white;
-}
+
 .team {
     background-color: #d0bdf4;
     padding: 50px 20px;
@@ -191,7 +195,9 @@ header {
     max-width: 100%;
     border-radius: 50%;
 }
-
+.testimonial {
+    font-style: italic;
+}
 .testimonial p {
     font-style: italic;
 }
@@ -202,7 +208,7 @@ header {
 }
 
 .cta {
-    background-color: #a28089;
+    
     color: #fff;
     padding: 50px 20px;
     text-align: center;
