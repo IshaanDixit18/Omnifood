@@ -1,47 +1,96 @@
-/*
-
-Font sizes:
-
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-Spacing System::after
-
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-Font weight
-Default : 400
-
-Line height:
-Default: 1
-
-Primary color : #e67e22
-
-Tints
-Shades
-Accents
-Greys
-
-Shadows
-
-Border Radius
-
-Whitespace
-
-
-*/
- 
-
-
-
-*{
-    padding: 0;
+body {
     margin: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    font-family: sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #555;
+header {
+    background-color:#A94438;
+    padding: 10px 0;
+    
+
+}
+
+.top-navbar {
+    display:flex;
+    padding: 0px;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #E6BAA3;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.1s ease;
+}
+.logo:hover{
+    color:white;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 15px;
+}
+
+.nav-list a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    color: #E6BAA3;
+    font-weight: bold;
+    transition: color 0.1s ease;
+}
+
+.nav-list a:hover {
+    
+    color:white;
+
+}
+
+
+
+.hero {
+    background-image: url('your-hero-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
 }
