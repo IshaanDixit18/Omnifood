@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color:#A94438;
+    background-color:#0A1D56;
     padding: 10px 0;
     
 
@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-    color: #E6BAA3;
+    color: #F8FAE5;
     font-size: 1.5em;
     font-weight: bold;
     transition: color 0.1s ease;
@@ -37,20 +37,26 @@ header {
 }
 
 .nav-list li {
-    margin-right: 15px;
+    margin-right: 30px; /* You can adjust this value to increase or decrease space */
+    transition: transform 0.3s ease; /* Added transform for animation */
+}
+
+.nav-list li:hover {
+    transform: scale(1.2); /* Scale the button on hover */
 }
 
 .nav-list a {
-    transition: color 0.3s ease, background-color 0.3s ease;
+    /* transition: color 0.3s ease, background-color 0.3s ease; */
     text-decoration: none;
-    color: #E6BAA3;
+    color: #F8FAE5;
     font-weight: bold;
-    transition: color 0.1s ease;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .nav-list a:hover {
     
-    color:white;
+    color:#66ccff;
+    
 
 }
 
@@ -88,9 +94,56 @@ header {
     background-color: #3498db;
     color: #fff;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease,  transform 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #2980b9;
+    transform: scale(1.1);
 }
+/* Existing styles for hero and navbar (if any) */
+
+.main-content {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align:center;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.main-content h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-bottom: 40px;
+    
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.service p {
+    color: #777;
+}
+
+/* Add more styles for additional sections/content */
