@@ -5,11 +5,34 @@ body {
 
 header {
     background-image: url('gargantua-black-5200x3250-9659.jpg'); /* Replace with the actual path to your image */
-    background-size: cover;
+    
+    background-size:cover;
     background-position: center;
-    padding: 20px 0;
+    padding: 10px 0;
     
 
+}
+.scroll-watcher{
+
+    height: 10px;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    scale: 0 0.8;
+    transform-origin: left;
+    animation: scroll-watcher ease-out;
+    animation-timeline:scroll(y);
+
+}
+
+
+
+@keyframes scroll-watcher {
+
+    to {scale: 1 1;}
+    
 }
 
 .top-navbar {
@@ -101,7 +124,7 @@ header {
 
 .cta-button:hover {
     background-color: #2980b9;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 /* Existing styles for hero and navbar (if any) */
 
